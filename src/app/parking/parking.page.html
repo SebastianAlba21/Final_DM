@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Registrar Pariente </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Botones con espacio vertical -->
+  <ion-row class="ion-margin-top ion-margin-bottom">
+    <ion-col>
+      <ion-button expand="full" (click)="RegistrarAlumno()"
+        >Registrar Alumno</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="Salir()">Salir</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- Checkboxes con espacio vertical -->
+  <ion-list class="ion-margin-top ion-margin-bottom">
+    <ion-item>
+      <ion-label>C1</ion-label>
+      <ion-checkbox [(ngModel)]="valoresCheckbox.C1"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>C2</ion-label>
+      <ion-checkbox [(ngModel)]="valoresCheckbox.C2"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>C3</ion-label>
+      <ion-checkbox [(ngModel)]="valoresCheckbox.C3"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <!-- Botón "Llegue" con espacio vertical -->
+  <ion-button expand="full" class="ion-margin-top" (click)="Parquear()"
+    >Llegue</ion-button
+  >
+</ion-content>
